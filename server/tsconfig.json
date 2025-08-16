@@ -1,0 +1,28 @@
+// --- folder-structure-viewer/server/tsconfig.json ---
+// Corrected tsconfig.json to work with ECMAScript modules and strict settings.
+{
+  "compilerOptions": {
+    // Environment Settings
+    "module": "NodeNext",
+    "target": "esnext",
+    "moduleResolution": "NodeNext",
+    
+    // File Layout
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    // This is the key setting that resolves the import/export error
+    // by ensuring that imports are treated as ES modules.
+    "verbatimModuleSyntax": true,
+    
+    // Recommended Options for stricter type checking and module handling
+    "strict": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
