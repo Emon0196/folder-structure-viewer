@@ -6,6 +6,8 @@
     "moduleResolution": "NodeNext",      // ensures correct resolution
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
 
     /* File Layout */
     "outDir": "./dist",
