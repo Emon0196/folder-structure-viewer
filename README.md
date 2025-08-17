@@ -59,6 +59,7 @@ First, set up and start the backend server.
     ```env
     # MongoDB connection string
     MONGO_URI="Your_personal_mongodb_url"
+    CLIENT_URL=http://localhost:5173
     ```
     *Note: If you are using a different MongoDB URI, replace the value accordingly.*
 4.  **Start the server:**
@@ -91,24 +92,3 @@ Next, set up and start the frontend application.
     ```
     The frontend will be available at `http://localhost:5173` (or a similar port). Your web browser will automatically open the application.
 
-## API Endpoints
-
-The backend exposes the following RESTful API endpoints.
-
-### `GET /api/folders`
-- **Description:** Retrieves all folders in the database.
-- **Response:** `200 OK`
-- **Example Response:**
-  ```json
-  [
-    {
-      "_id": "60c72b2f9b1e8e001f3e5c9a",
-      "name": "Root Folder",
-      "parentId": null
-    },
-    {
-      "_id": "60c72b2f9b1e8e001f3e5c9b",
-      "name": "Documents",
-      "parentId": "60c72b2f9b1e8e001f3e5c9a"
-    }
-  ]
